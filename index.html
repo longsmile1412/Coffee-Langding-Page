@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mây Coffee</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- coustom footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    
+<!-- header section starts  -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+    //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"> Mây coffee <i class="fas fa-mug-hot"></i> </a>
+
+    <nav class="navbar">
+        <a href="#home">Trang Chủ</a>
+        <a href="#about">Giới Thiệu</a>
+        <a href="#menu">Tổng Quan</a>
+        <a href="#review">Đánh Giá</a>
+        <a href="#book">Liên Hệ</a>
+    </nav>
+
+    <a href="#" class="btn">Đặt Bàn</a>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>MÂY COFFEE</h3>
+            <a href="#" class="btn">Đặt Hàng</a>
+        </div>
+
+        <div class="image">
+            <img src="image/home-img-1.png" class="main-home-image" alt="">
+        </div>
+
+    </div>
+
+    <div class="image-slider">
+        <img src="image/home-img-1.png" alt="">
+        <img src="image/home-img-2.png" alt="">
+        <img src="image/home-img-3.png" alt="">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> Mây Coffee <span>Sự Lựa Chọn Hoàn Hảo</span> </h1>    
+
+    <div class="row">
+
+        <div class="image">
+            <img src="image/about-img.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3 class="title">Điều Gì Làm Cho Cà Phê Của Chúng Tôi Trở Nên Đặc Biệt ?</h3>
+            <p>Một hương vị mạnh mẽ, một cách pha chế đậm đà và hạt cà phê được rang hơi cháy một tí đã tạo nên sự khác biệt, và sự đặc biệt là cà phê vẫn sẽ giữ được độ mạnh của nó một cách tự nhiên. mọi thứ trong chiếc cốc ấy đều đậm đặc, kể cả nước !</p>
+            <a href="#" class="btn">Đọc Thêm</a>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="image/about-icon-1.png" alt="">
+                    <h3>Cà Phê Chất Lượng</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/about-icon-2.png" alt="">
+                    <h3>Chi Nhánh Của Chúng Tôi</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/about-icon-3.png" alt="">
+                    <h3>Giao Hàng Miễn Phí</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> thực đơn <span>Menu</span> </h1>
+
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <img src="image/menu-1.png" alt="">
+            <div class="content">
+                <h3>Caramel Macchiato Đá</h3>
+                <p>Muốn nếm vị cà phê phải chờ đợi pha chế, đó là nét tinh hoa được chắt chiu lại mỗi giây sống chậm với cuộc đời.</p>
+                <span>49.000 đ</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-2.png" alt="">
+            <div class="content">
+                <h3>Caramel Macchiato Nóng</h3>
+                <p>Cà phê không nhất thiết phải đắng, phải chua thì mới ngon. Đôi khi một chút biến tấu, một chút ngọt ngào để yêu chiều bản thân mới thật sự quan trọng. Và đó là cách Caramel Macchiato Nóng ra đời.</p>
+                <span>55.000 đ</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-3.png" alt="">
+            <div class="content">
+                <h3>Latte Nóng</h3>
+                <p>Thức uống "đánh thức" năng lượng ngày mới hợp cho những ai mới bước vào thế giới cà phê hoặc ghiền cà phê nhưng muốn khám phá thêm nhiều hương vị mới.</p>
+                <span>35.000 đ</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-4.png" alt="">
+            <div class="content">
+                <h3>Cappuccino Nóng</h3>
+                <p>Cứ mỗi lần muốn sống chậm lại, tôi đều tìm đến cà phê. Mùi hương Cappuccino Nóng của nó len lỏi vào đầu óc, khiến tôi như quay cuồng, ma mị.</p>
+                <span>60.000 đ</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-5.png" alt="">
+            <div class="content">
+                <h3>Espresso Nóng</h3>
+                <p>Sài Gòn ồn ào, vội vã, hãy dành chút thời gian dừng chân quán Mây Coffee nho nhỏ thưởng thức vị đắng của Espresso Nóng và cảm nhận cuộc sống chậm đang trôi.</p>
+                <span>70.000 đ</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-6.png" alt="">
+            <div class="content">
+                <h3>Cà Phê Đen Nóng</h3>
+                <p>Nếu muốn sống chậm hãy uống ly Cà Phê Đen Nóng, từng giọt cafe rơi, lặng lẽ ngắm nhìn dòng người vội vã hối hả trên đường.</p>
+                <span>63.000 đ</span>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> Đánh Giá <span>Mọi Người Nói Gì ?</span> </h1>
+
+    <div class="testimonials">
+        <div class="inner">
+          <div class="row">
+            <div class="col">
+              <div class="testimonial">
+                <img src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-1/298937009_3119179438345647_7875300593487688985_n.jpg?stp=dst-jpg_p200x200&_nc_cat=103&ccb=1-7&_nc_sid=7206a8&_nc_ohc=-BXb8l5YB6kAX-6wN8X&_nc_ht=scontent.fsgn5-12.fna&oh=00_AT8Xld7DaxuZNLl_DG5zXrxDTZelKf7aUAhZb8IaItOcGw&oe=62FC3DF5" alt="">
+                <div class="name">Ánh Nguyệt</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+  
+                <p>
+                  Cà Phê Thật Sự Rất Ngon, Quán Rất Đẹp !
+                </p>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="testimonial">
+                <img src="https://oceanami.com/wp-content/uploads/2019/04/quan-cafe-dep-tai-bai-sau-vung-tau-7.jpg" alt="">
+                <div class="name">Leonard</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+  
+                <p>
+                    That’s a great place
+                </p>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="testimonial">
+                <img src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-1/296078931_10159817141335726_8525067932942438248_n.jpg?stp=c53.0.320.320a_dst-jpg_p320x320&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=v5fvr69EAocAX-MfCbg&_nc_ht=scontent.fsgn5-14.fna&oh=00_AT-G7P_TwiOtkG5uVKThMpxacqxqm8CjkDFkDaXqAYeqjQ&oe=62FBE54E" alt="">
+                <div class="name">Hoàng Long</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+  
+                <p>
+                    Good, enjoy the moment !
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-- review section ends -->
+
+<!-- book section starts  -->
+
+<section class="book" id="book">
+
+    <h1 class="heading"> Đặt Trước <span>Liên Hệ</span> </h1>
+
+    <form  action="https://formspree.io/f/myyvypnd"
+    method="POST">
+    <input type="email" name="email" placeholder="Nhập email" class="box">
+    <input type="message" name="message" placeholder="Nhập Tên" class="box">
+        <input type="message" name="message" placeholder="Nhập điện thoại" class="box">
+        <textarea name="message" placeholder="Nội Dung" class="box" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="Gửi" class="btn">
+
+    </form>
+
+</section>
+
+<!-- book section ends -->
+
+<!-- footer section starts  -->
+<!-- Site footer -->
+<footer>
+    <div class="content">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic">Mây Coffee</div>
+          <p>Cà phê thực sự tuyệt vời, môi trường thân thiện. Kết hợp tốt các món ăn với các lựa chọn không chứa gluten và thuần chay được lưu ý cho những người có chế độ ăn kiêng</p>
+        </div>
+        <div class="lower">
+          <div class="topic">Liên Hệ</div>
+          <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume"></i>0123456789</a>
+          </div>
+          <div class="email">
+            <a href="#"><i class="fas fa-envelope"></i>maycoffe@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="middle box">
+        <div class="topic">Đối Tác Của Chúng Tôi</div>
+        <div><a href="#">India</a></div>
+        <div><a href="#">France</a></div>
+        <div><a href="#">Campuchia</a></div>
+      </div>
+      <div class="right box">
+        <div class="topic">Đăng Ký</div>
+        <form action="https://formspree.io/f/myyvypnd"
+        method="POST">
+          <input name="email" type="text" placeholder="Nhập Gmail Của Bạn !">
+          <input type="submit" name="" value="Send">
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <!-- End of .container -->
+  <div id="back-to-top" class="back-to-top" data-toggle="tooltip" data-placement="left" title="Trở lên đầu trang"><span class="glyphicon glyphicon-circle-arrow-up text-primary"></span></div>
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
